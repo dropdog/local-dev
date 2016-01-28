@@ -7,7 +7,7 @@
 cd [drupal-root]
 
 // Clone this repo
-git clone git@github.com:dropdog/local-dev.git
+git clone git@github.com:dropdog/local-dev.git --branch [dev|live]
 
 // Allow the settings.php file to be editable
 chmod 777 /path/to/settings.php
