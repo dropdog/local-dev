@@ -78,7 +78,7 @@ $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
  * During development it can be useful to install test extensions for debugging
  * purposes.
  */
-$settings['extension_discovery_scan_tests'] = TRUE;
+#$settings['extension_discovery_scan_tests'] = TRUE;
 
 /**
  * Enable access to rebuild.php.
@@ -88,15 +88,15 @@ $settings['extension_discovery_scan_tests'] = TRUE;
  * be gained by generating a query string from rebuild_token_calculator.sh and
  * using these parameters in a request to rebuild.php.
  */
-$settings['rebuild_access'] = TRUE;
+$settings['rebuild_access'] = FALSE;
 
 # Update access
-$settings['update_free_access'] = TRUE;
+$settings['update_free_access'] = FALSE;
 
 /**
  * Enable local development services.
  */
-$settings['container_yamls'][] = DRUPAL_ROOT . '/local-dev/development.services.yml';
+$settings['container_yamls'][] = DRUPAL_ROOT . '/local-dev/live.services.yml';
 
 // Config sync folder
 $config_directories = array(

@@ -3,13 +3,11 @@
 # To activate this feature, follow the instructions at the top of the
 # 'example.settings.local.php' file, which sits next to this file.
 services:
-  cache.backend.null:
-    class: Drupal\Core\Cache\NullBackendFactory
   twig.config:
-    abstract: true
+    abstract: false
     # Twig debugging:
     # @default false
-    debug: true
+    debug: false
     # Twig auto-reload:
     # @default null
     auto_reload: null
