@@ -4,7 +4,7 @@
 # 'example.settings.local.php' file, which sits next to this file.
 services:
   twig.config:
-    abstract: false
+    abstract: true
     # Twig debugging:
     # @default false
     debug: false
