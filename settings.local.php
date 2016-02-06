@@ -105,3 +105,11 @@ $config_directories = array(
 );
 
 
+/*
+ * Enable webprofiler timeline.
+ * See more at: https://github.com/lussoluca/webprofiler/blob/8.x-2.x/README.md
+ */
+if (file_exists(DRUPAL_ROOT . '/modules/devel/webprofiler/webprofiler.module')) {
+  $class_loader->addPsr4('Drupal\\webprofiler\\', [ DRUPAL_ROOT . '/modules/devel/webprofiler/src']);
+  $settings['container_base_class'] = '\Drupal\webprofiler\DependencyInjection\TraceableContainer';
+}
